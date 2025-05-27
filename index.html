@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Detailing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <style>
+    @media (max-width: 991px) {
+    .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95); /* Light backdrop */
+  }
+
+  .navbar-nav .nav-link {
+    color: #000 !important; /* Make links dark for readability */
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1); /* Make toggler icon visible on dark backgrounds */
+  }
+}
+
+    body {
+      background-color: black;
+      color: #ffffff;
+    }
+    .navbar {
+      background-color: #1c1b17;
+      height: 100px;
+    }
+    .navbar-brand img {
+      height: auto;
+      width: 165px;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero video,
+    .hero img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.6;
+    }
+    .hero .content {
+      position: relative;
+      z-index: 1;
+    }
+    .section-header {
+      color: #efb140;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background-color: #efb140;
+      border: none;
+    } 
+    .map {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+    .nav-link {
+        color: white;
+    }
+    .star-rating {
+        color: white;
+    }
+    .number {
+        color: #efb140;
+    }
+    .btn {
+        background-color: #efb140;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-3 sticky-top">
+    <a class="navbar-brand" href="#home">
+      <img class="logo" src="./untitled folder/logo22.png" alt="Logo"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navLinks">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline>
+      <source src="./untitled folder/RPReplay_Final1748224446 (1).mp4" type="video/mp4" />
+    </video>
+    <!-- <img src="hero.jpg" alt="Hero Image" /> Uncomment if using image instead -->
+    <div class="content">
+      <h1 class="display-4 fw-bold">Auto Detailing Done Right</h1>
+      <p class="lead">Professional. Affordable. Mobile.</p>
+      <a href="#contact" class="btn btn-warning text-dark mt-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-5 text-center" id="about">
+    <div class="container">
+      <h2 class="section-header">AZ Auto Detailing</h2>
+      <p class="lead">We bring top-notch car detailing services right to your driveway — no hassle, no waiting rooms, just quality care where it's most convenient for you. Whether you're looking to restore that showroom shine, deep-clean the interior, or protect your paint for the long haul, we treat every vehicle with the attention to detail it deserves. Our professional team uses premium products, proven techniques, and a passion for perfection to deliver outstanding results every time. It's not just a wash — it's a transformation.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-5 bg-dark text-white" id="services">
+    <div class="container">
+      <h2 class="text-center mb-4" style="color: #efb140;">Our Services</h2>
+      <div class="row text-center">
+        
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-droplet-half display-4 mb-3" style="color: #1c1b17;"></i>
+              <h5 class="card-title">Exterior Wash</h5>
+              <p class="card-text">Thorough hand wash and dry to leave your vehicle spotless and shiny.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card  h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-brush display-4 mb-3" style="color: #1c1b17;"></i>
+              <h5 class="card-title">Interior Detailing</h5>
+              <p class="card-text">Vacuum, shampoo, and deep clean to restore your interior to like-new.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <i class="bi bi-stars display-4 mb-3" style="color: #1c1b17;"></i>
+              <h5 class="card-title">Polishing & Wax</h5>
+              <p class="card-text">Protect your paint and enhance gloss with our premium polish and wax.</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="py-5 text-center" id="testimonials">
+    <div class="container">
+      <h2 class="section-header">What Our Clients Say</h2>
+      <div class="row g-4 mt-4">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>“Amazing job! My car looks and feels brand new. The attention to detail was top-tier. Definitely recommend.”</p>
+            <small>- Alex R.</small>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card p-3">
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>“Fast, friendly, and spotless results. The team showed up on time and made my SUV shine like new. Will use again!”</p>
+            <small>- Sarah M.</small>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card p-3">
+            <div class="star-rating mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>“Best detail service I've had. They got every crevice cleaned out and even polished my rims. Worth every penny.”</p>
+            <small>- Chris D.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <!-- Contact & Map Section -->
+<section class="py-5" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <h2 class="mb-3">Get in Touch</h2>
+          <p>Call us at <a class="number" href="tel:1234567890">(123) 456-7890</a> or fill out the form below and we’ll be in touch shortly.</p>
+          <form>
+            <div class="mb-3">
+              <label for="firstName" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="John" required>
+            </div>
+            <div class="mb-3">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+  
+        <!-- Embedded Google Map -->
+        <div class="col-md-6">
+          <h2 class="mb-3">Our Location</h2>
+          <div class="ratio ratio-4x3">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106801.82066258206!2d-111.9718597!3d33.2937997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba96440c07e3b%3A0xf48a91b473fa40d7!2sChandler%2C%20AZ!5e0!3m2!1sen!2sus!4v1716686048855!5m2!1sen!2sus" 
+                width="100%" height="100%" style="border:0;" 
+                allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="background-color: #000; color: #fff; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+      <p style="margin: 0; font-size: 14px;">© AZ Auto Detail (mock). All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
